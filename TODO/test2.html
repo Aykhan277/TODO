@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="h0ttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="test2.css">
+    <title>T O D O app</title>
+  </head>
+  <body>
+
+    <!-- TITLE -->
+    <header>
+
+      <h1 class="name">T O D O </h1>
+      <button onclick="myFunction()">
+        <svg  id= "icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
+      </button>
+    </header>
+    <!-- INPUT FIELD TO ENTER TASK AND DROPDOWN FILTER -->
+    <form>
+      <button class="todo_button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <input type="text" placeholder="Create a new todo..." class="todo_input" />
+      
+      
+      <!-- <div class="select">
+        <select name="todos" class="filter_todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Active</option>
+        </select>
+       
+      </div> -->
+      
+        <div class="select">
+          
+          <p id="all">All</p>
+          <p id="active">Active</p>
+          <p id="completed">Completed</p>
+          <p id="delete">Clear Complete</p>
+        </div>
+      <div>
+
+        <!-- <p class="null">Nothing to show, Uhh?</p> -->
+      </div>
+    </form>
+    <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DYNAMICALLY USING JAVASCRIPT -->
+    <div class="todo_container">
+      <ul class="todo_list"></ul>
+    </div>
+    <!-- ADDING JAVA SCRIPT -->
+    <script src="test2.js"></script>
+  </body>
+</html>
